@@ -1,0 +1,11 @@
+header h1{
+    color: #ff5555;
+}
+header .subititle{
+    font-style: italic;
+    color: #555555;
+}
+.background__gray{
+    background-color: #333333;
+    color: white;
+}
