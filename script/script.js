@@ -9,8 +9,15 @@ function formSubmit() {
         return
     }
     document.getElementById('scriptTarget').innerHTML = generatedPassword;
-    // document.getElementById("MyElement").classList.add('MyClass');
     document.getElementById('scriptTarget').classList.remove('d-none');
-    // alert(generatedPassword);
 }
-// function copyText
+// copy text automatically on click
+function copyText() {
+    document.getElementById("myInput").classList.remove('d-none');
+    document.getElementById("myInput").value = document.getElementById("scriptTarget").innerHTML;
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    document.getElementById("myInput").classList.add('d-none');
+}
