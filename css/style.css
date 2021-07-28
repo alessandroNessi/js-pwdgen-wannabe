@@ -1,17 +1,67 @@
+:root {
+    --red-300: #ff5555 ;
+    --gray-400: #555555;
+    --gray-500: #333333;
+}
 header h1{
-    color: #ff5555;
+    color: var(--red-300);
 }
 header .subititle{
     font-style: italic;
-    color: #555555;
+    color: var(--gray-400);
 }
 .background__gray{
-    background-color: #333333;
+    background-color:var(--gray-500);
     color: white;
     border: 0;
-    box-shadow: 0px 0px 3px 2px #333333;
+    box-shadow: 0px 0px 3px 2px var(--gray-500);
 }
 .non_visible{
     color: transparent;
     border-color: transparent;
+}
+.button__submit:hover{
+    transition: box-shadow 0.1s;
+    box-shadow: 0 0 3px 1px var(--gray-500);
+}
+.button__copy--label{
+    font-style: italic;
+    opacity: 0.5;
+}
+.input__form label{
+    display: inline-block;
+    min-width: 130px;
+}
+.input__form{
+    min-height: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    background: rgba(168,202,186, 0.5);
+    box-shadow: 0px 0px 10px 10px rgba(93,65,87,1);
+}
+#scriptTarget{
+    max-width: 200px;
+}
+#scriptTarget::before{
+    content: "\f070";
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    color: rgba(255, 0, 0, 0.7);
+    width: 200px;
+    transition: opacity 0.5s, color 0.2s;
+    position: absolute;
+    background-color: var(--gray-500);
+    top: 0;
+    left:50%;
+    transform: translate( -50% , 0%);
+}
+#scriptTarget:hover::before{
+    content: "\f06e";
+    font-family: "Font Awesome 5 Free"; 
+    color: rgba(31, 255, 30, 0.7);
+    font-weight: 900; 
+}
+#scriptTarget:focus::before{
+    opacity: 0;
 }
