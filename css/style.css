@@ -8,4 +8,5 @@ header .subititle{
 .background__gray{
     background-color: #333333;
     color: white;
+    box-shadow: 0px 0px 3px 2px #333333;
 }

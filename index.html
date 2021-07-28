@@ -16,23 +16,22 @@
         <p class="subititle py-2 text-center">Please enter your personal data in the form below</p>
     </header>
     <main class="container">
-        <form action="" name="myForm" onsubmit="formSubmit();">
-            <div>
-                <label class="mb-2" for="firstName">First name:</label><br>
-                <input class="mb-2" type="text" id="firstName" name="firstName" value="">
-            </div>
-            <div>
-                <label class="mb-2" for="lastName">Last name:</label><br>
-                <input class="mb-2" type="text" id="lastName" name="lastName" value=""> 
-            </div>
-            <div>
-                <label class="mb-2" for="favoriteColor">Favorite color:</label><br>
-                <input class="mb-2" type="text" id="favoriteColor" name="favoriteColor" value="">
-            </div>
-            
-            <input type="submit" value="Submit">
-          </form>
-          <p class="p2 d-flex justfy-content-center text-center background__gray" id="scriptTarget"></p>
+        <div>
+            <label class="mb-2" for="firstName">First name:</label><br>
+            <input class="mb-2" type="text" id="firstName" name="firstName" value="">
+        </div>
+        <div>
+            <label class="mb-2" for="lastName">Last name:</label><br>
+            <input class="mb-2" type="text" id="lastName" name="lastName" value=""> 
+        </div>
+        <div>
+            <label class="mb-2" for="favoriteColor">Favorite color:</label><br>
+            <input class="mb-2" type="text" id="favoriteColor" name="favoriteColor" value="">
+        </div>    
+        <button class="mb-2 rounded-pill" onclick="formSubmit()">Generate Password</button>
+        <div class="d-flex justify-content-center">
+            <p id="scriptTarget" class="d-none background__gray"></p>
+        </div>
     </main>
     <!-- password script -->
     <script src="script/script.js"></script>
